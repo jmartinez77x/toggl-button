@@ -5,11 +5,11 @@
 
 togglbutton.render('.window-header:not(.toggl)', {observe: true}, function (elem) {
   var link, container = createTag('div', 'button-link trello-tb-wrapper'),
-    duration,
+    //duration,
     descFunc,
-    titleElem = $('.window-title-text', elem),
-    trackedContainer = createTag('div', 'toggl-tracked'),
-    trackedElem = $('.other-actions'),
+    titleElem = $('.window-title h2', elem),
+    //trackedContainer = createTag('div', 'toggl-tracked'),
+    //trackedElem = $('.other-actions'),
     projectElem = $('.board-header > a'),
     descriptionElem = $('.js-move-card');
 
@@ -39,7 +39,7 @@ togglbutton.render('.window-header:not(.toggl)', {observe: true}, function (elem
 togglbutton.render('.checklist-item-details:not(.toggl)', {observe: true}, function (elem) {
   var link,
     projectElem = $('.board-header > a'),
-    titleElem = $('.window-title-text'),
+    titleElem = $('.window-title h2'),
     taskElem = $('.checklist-item-details-text', elem);
 
   link = togglbutton.createTimerLink({
